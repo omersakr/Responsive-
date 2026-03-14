@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Premium Hardware Collection</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+    <nav>
+        <div><img src="./omersakr-logo-cyan-no-bg.png" alt="Logo"></div>
+        <div class="nav-content">
+            <i class="fa-regular fa-circle-xmark"></i>
+            <a href="index.html">Home</a>
+            <a href="#">Content</a>
+            <a href="#">Shop More</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About</a>
+        </div>
+        <div class="icon">
+            <i class="fa-brands fa-sistrix"></i>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <a href="Login.html" class="auth-btn">Login</a>
+            <a href="Register.html" class="auth-btn signup">Sign Up</a>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="auth-container">
+        <div class="auth-box">
+            <div class="auth-header">
+                <span class="auth-label">CREATE ACCOUNT</span>
+                <h1>Join the Elite</h1>
+                <p>Register to access exclusive hardware and premium features</p>
+            </div>
+
+            <form class="auth-form">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+
+                <button type="submit" class="btn primary">REGISTER</button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Already have an account? <a href="Login.html">Login here</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const menuIcon = document.querySelector(".fa-bars");
+        const navContent = document.querySelector(".nav-content");
+        const closeBtn = document.querySelector(".fa-circle-xmark");
+
+        menuIcon.addEventListener("click", () => {
+            navContent.classList.toggle("show");
+        });
+        closeBtn.addEventListener("click", () => {
+            navContent.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
