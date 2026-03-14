@@ -46,9 +46,42 @@ nav img {
   justify-self: end;
   color: #00baba;
   margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
 }
-.icon i {
-  margin-right: 15px;
+
+.auth-btn {
+  color: #e7eaee;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.auth-btn:hover {
+  color: #00e5e5;
+  border-color: #00e5e5;
+  text-shadow:
+    0 0 5px rgb(1, 207, 211),
+    0 0 10px rgb(1, 207, 211);
+}
+
+.auth-btn.signup {
+  background-color: #00e5e5;
+  color: black;
+  font-weight: bold;
+}
+
+.auth-btn.signup:hover {
+  background-color: #007f7f;
+  color: white;
+  box-shadow:
+    0 0 5px rgb(1, 207, 211),
+    0 0 10px rgb(1, 207, 211);
 }
 .fa-bars {
   display: none;
